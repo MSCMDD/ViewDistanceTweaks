@@ -3,8 +3,6 @@ package com.froobworld.viewdistancetweaks.util;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 
-import static org.joor.Reflect.on;
-
 public class SpigotViewDistanceSyncer {
 
     public static void syncSpigotViewDistances(World world) {

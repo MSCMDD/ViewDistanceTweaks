@@ -6,8 +6,6 @@ import org.bukkit.World;
 
 import java.lang.reflect.InvocationTargetException;
 
-import static org.joor.Reflect.*;
-
 public class PaperSimulationDistanceHook extends SpigotSimulationDistanceHook {
 
     @Override

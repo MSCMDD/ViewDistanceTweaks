@@ -1,7 +1,7 @@
 package com.froobworld.viewdistancetweaks.limiter.adjustmentmode;
 
-import com.froobworld.viewdistancetweaks.util.ChunkCounter;
 import com.froobworld.viewdistancetweaks.hook.viewdistance.SimulationDistanceHook;
+import com.froobworld.viewdistancetweaks.util.ChunkCounter;
 import org.bukkit.World;
 
 import java.util.Collection;

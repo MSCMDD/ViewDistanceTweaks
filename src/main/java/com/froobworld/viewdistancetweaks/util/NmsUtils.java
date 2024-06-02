@@ -4,8 +4,6 @@ import org.bukkit.Bukkit;
 
 import java.util.regex.Pattern;
 
-import static org.joor.Reflect.*;
-
 public class NmsUtils {
     private static final String NMS_PACKAGE_NAME = on(Bukkit.getServer()).call("getHandle")
             .type()

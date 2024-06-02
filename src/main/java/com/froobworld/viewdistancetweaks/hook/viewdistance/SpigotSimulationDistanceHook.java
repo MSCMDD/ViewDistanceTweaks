@@ -6,7 +6,7 @@ import com.froobworld.viewdistancetweaks.util.ViewDistanceUtils;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
-import static org.joor.Reflect.*;
+import static org.joor.Reflect.onClass;
 
 public class SpigotSimulationDistanceHook implements SimulationDistanceHook {
 

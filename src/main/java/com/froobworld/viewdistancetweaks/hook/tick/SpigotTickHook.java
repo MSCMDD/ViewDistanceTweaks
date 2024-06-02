@@ -9,8 +9,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.function.Consumer;
 
-import static org.joor.Reflect.*;
-
 public class SpigotTickHook implements TickHook {
     private static final long[] tickTimes;
     static {

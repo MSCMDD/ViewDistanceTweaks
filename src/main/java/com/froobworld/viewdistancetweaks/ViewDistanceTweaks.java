@@ -6,7 +6,7 @@ import com.froobworld.viewdistancetweaks.hook.viewdistance.SpigotSimulationDista
 import com.froobworld.viewdistancetweaks.limiter.ClientViewDistanceManager;
 import com.froobworld.viewdistancetweaks.metrics.VdtMetrics;
 import com.froobworld.viewdistancetweaks.placeholder.VdtExpansion;
-import com.froobworld.viewdistancetweaks.util.*;
+import com.froobworld.viewdistancetweaks.util.SpigotViewDistanceSyncer;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 

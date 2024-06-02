@@ -1,25 +1,28 @@
 plugins {
-    id 'com.github.johnrengelman.shadow' version '5.2.0'
+    id 'com.github.johnrengelman.shadow' version '7.0.0'
     id 'java'
 }
 
 group 'com.froobworld'
 version '1.5.7'
-jar.enabled = false;
+jar.enabled = false
 
-sourceCompatibility = 1.8
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
 
 repositories {
-    mavenLocal();
+    mavenLocal()
     mavenCentral()
     maven {
-        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
     }
     maven {
-        url "https://oss.sonatype.org/content/groups/public/"
+        url = "https://oss.sonatype.org/content/groups/public/"
     }
     maven {
-        url "https://papermc.io/repo/repository/maven-public/"
+        url = "https://repo.papermc.io/repository/maven-public/"
     }
     maven {
         url = 'https://repo.extendedclip.com/content/repositories/placeholderapi/'
@@ -27,13 +30,13 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    compileOnly 'io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT'
+    testImplementation 'junit:junit:4.12'
+    compileOnly 'io.papermc.paper:paper-api:1.20.4-R0.1-SNAPSHOT'
     compileOnly 'me.clip:placeholderapi:2.11.6'
     compileOnly 'io.netty:netty-all:4.1.74.Final'
-    compile 'org.jooq:joor-java-8:0.9.14'
-    compile 'com.froobworld:nab-configuration:1.0.2'
-    compile 'org.bstats:bstats-bukkit:3.0.0'
+    implementation 'org.jooq:joor:0.9.14'
+    implementation 'com.froobworld:nab-configuration:1.0.2'
+    implementation 'org.bstats:bstats-bukkit:3.0.0'
 }
 
 processResources {
@@ -41,7 +44,7 @@ processResources {
 }
 
 shadowJar {
-    archiveFileName = 'ViewDistanceTweaks-' + project.version.toString() + '.jar';
+    archiveFileName = 'ViewDistanceTweaks-' + project.version.toString() + '.jar'
 
     relocate 'com.froobworld.nabconfiguration', 'com.froobworld.viewdistancetweaks.lib.nabconfiguration'
     relocate 'org.joor', 'com.froobworld.viewdistancetweaks.lib.joor'
@@ -49,7 +52,7 @@ shadowJar {
 }
 
 artifacts {
-    shadowJar;
+    shadowJar
 }
 
-assemble.dependsOn(shadowJar);
+assemble.dependsOn(shadowJar)

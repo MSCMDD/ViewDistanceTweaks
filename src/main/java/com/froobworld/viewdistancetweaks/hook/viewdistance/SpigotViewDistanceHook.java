@@ -7,7 +7,7 @@ import com.froobworld.viewdistancetweaks.util.ViewDistanceUtils;
 import org.bukkit.World;
 import org.bukkit.entity.Player;
 
-import static org.joor.Reflect.*;
+import static org.joor.Reflect.onClass;
 
 public class SpigotViewDistanceHook implements ViewDistanceHook {
     private final ClientViewDistanceManager clientViewDistanceManager;

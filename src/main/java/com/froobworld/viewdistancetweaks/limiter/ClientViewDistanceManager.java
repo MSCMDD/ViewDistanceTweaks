@@ -18,7 +18,8 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.joor.Reflect.*;
+import static org.joor.Reflect.on;
+import static org.joor.Reflect.onClass;
 
 public class ClientViewDistanceManager implements Listener {
     private final ViewDistanceTweaks viewDistanceTweaks;
